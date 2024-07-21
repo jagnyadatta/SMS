@@ -5,17 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMS</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!----------------- Nav Section ----------------------->
     <header>
       <nav>
+        <div class="logo">
+          <img src="./assets/college-logo.jpg" alt="college-logo" />
+        </div>
+        <div class="nav-clg-name">
+          <h1>College Name</h1>
+        </div>
+        <div class="nav-li">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Notification</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-btn">
+          <button class="btn" id="login-btn">LogIn</button>
+          <button class="btn" id="register-btn">Register</button>
+        </div>
+        <div class="menu-btn">
+          <span class="fa fas fa-bars"></span>
+        </div>
+      </nav>
+      <div class="side-nav">
         <div class="logo">
           <img src="./assets/college-logo.jpg" alt="college-logo" />
         </div>
@@ -29,16 +61,33 @@
           </ul>
         </div>
         <div class="nav-btn">
-          <button class="btn" id="login-btn">
-            LogIn
-          </button>
-          <button class="btn" id="register-btn">
-            Register
-          </button>
+          <button class="btn" id="login-btn">LogIn</button>
+          <button class="btn" id="register-btn">Register</button>
         </div>
-      </nav>
+        <div class="close-btn">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
     </header>
-
+    <!------------------ Home section  ---------------->
+    <section class="home">
+      <div class="desc box">
+        <h2>
+            Welcome to...!
+        </h2>
+        <h2><span>Student Management System.</span></h2>
+        <p class="home-para">
+            Streamline your academic tasks with ease. Students can mark attendance, view schedules, and apply for leave online. Lecturers can manage lectures and track attendance effortlessly. 
+        </p>
+        <div class="nav-btn home-btn" >
+            <button id="login-btn">Read More.</button>
+        </div>
+      </div>
+      <div class="home-img box">
+        <img src="./assets/home-page-img.jpg" alt="">
+      </div>
+    </section>
+    <footer></footer>
     <script src="./js/script.js"></script>
   </body>
 </html>

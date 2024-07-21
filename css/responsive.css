@@ -1,0 +1,47 @@
+/* =================== For Mobile ==============*/
+@media screen and (max-width: 480px) {
+    nav .nav-li ul{
+        display: none;
+    }
+    nav .nav-clg-name{
+        display: none;
+        margin-left: 50px;
+    }
+    nav .nav-btn{
+        display: none;
+    }
+    nav .menu-btn{
+        display: block;
+    }
+    /*----------- home section  -----------*/
+    .home .home-img{
+        display: none;
+    }
+    .home .box{
+        width: 100%;
+    }
+    .home h2 span{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* =================== For Tablet ==============*/
+@media screen and (min-width:481px) and (max-width:884px){
+    nav .nav-li ul{
+        display: none;
+    }
+    nav .nav-clg-name{
+        display: block;
+        margin-left: 50px;
+    }
+    nav .nav-btn{
+        display: none;
+    }
+    nav .menu-btn{
+        display: block;
+    }
+}

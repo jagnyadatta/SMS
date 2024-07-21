@@ -22,17 +22,25 @@ nav .logo img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+nav .nav-clg-name{
+  display: none;
 }
 nav .nav-li ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 15px;
   font-weight: 500;
 }
 nav .nav-li ul a{
     text-decoration: none;
     color: black;
+}
+nav .nav-li ul a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 3px 2px 4px rgba(66, 99, 189, 1);
 }
 /*---- nav button code login and register ---*/
 .nav-btn .btn {
@@ -77,4 +85,99 @@ nav .nav-li ul a{
  background-color: #fff;
  color: #f57f6b;
 }
-  
+/*------------------- Nav menu button -----------------*/
+nav .menu-btn{
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/*-------------------- Side Navbar ----------------*/
+.side-nav {
+  width: 50%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: start;
+  background: hsl(193, 85%, 95%);
+  /* border: 1px solid red; */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.side-nav .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+}
+.side-nav .nav-li ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.side-nav .nav-li ul a{
+  text-decoration: none;
+  color: black;
+}
+.side-nav .nav-li ul a:hover{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-shadow: 3px 2px 4px rgba(66, 99, 189, 1);
+}
+.side-nav .nav-btn{
+  margin-top: 60px;
+}
+
+/*------------------- Nav close button -----------------*/
+.side-nav .close-btn{
+  display: flex;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+
+/*--------------------- Home Section ------------------*/
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding: 0px 20px;
+
+}
+.home .box{
+  width: 48%;
+  height: 90vh;
+  /* border: 1px dotted black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.home .desc{
+  display: flex;
+  flex-direction: column;
+}
+.home h2 span{
+  color: #00BFA6;
+  text-shadow: 3px 2px 4px rgba(150, 88, 145, 0.377);
+}
+.home .home-para{
+  margin-top: 20px;
+}
+.home .home-btn{
+  margin-top: 40px;
+}
+.home .home-img img{
+  width: 70%;
+  height: 70%;
+}
