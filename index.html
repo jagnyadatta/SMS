@@ -32,7 +32,7 @@
         </div>
         <div class="nav-li">
           <ul>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="#index.html">Dashboard</a></li>
             <li><a href="#">Notification</a></li>
             <li><a href="#">Notes</a></li>
             <li><a href="#">Gallery</a></li>
@@ -69,24 +69,44 @@
         </div>
       </div>
     </header>
+    <!----------------------- Login Popup -------------------->
+    <div id="login-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="lecturer">Lecturer</option>
+          </select>
+          <button type="submit" id="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
     <!------------------ Home section  ---------------->
     <section class="home">
       <div class="desc box">
-        <h2>
-            Welcome to...!
-        </h2>
+        <h2>Welcome to...!</h2>
         <h2><span>Student Management System.</span></h2>
         <p class="home-para">
-            Streamline your academic tasks with ease. Students can mark attendance, view schedules, and apply for leave online. Lecturers can manage lectures and track attendance effortlessly. 
+          Streamline your academic tasks with ease. Students can mark
+          attendance, view schedules, and apply for leave online. Lecturers can
+          manage lectures and track attendance effortlessly.
         </p>
-        <div class="nav-btn home-btn" >
-            <button id="login-btn">Read More.</button>
+        <div class="nav-btn home-btn">
+          <button id="login-btn">Read More.</button>
         </div>
       </div>
       <div class="home-img box">
-        <img src="./assets/home-page-img.jpg" alt="">
+        <img src="./assets/home-page-img.jpg" alt="" />
       </div>
     </section>
+
     <footer></footer>
     <script src="./js/script.js"></script>
   </body>
